@@ -1,5 +1,7 @@
 package Assignment2;
 
+import java.util.Date;
+
 public class BankAccount {
     private int accountNumber;
     private String name;
@@ -11,12 +13,14 @@ public class BankAccount {
         accountNumber = 1000;
         name = "";
         balance = 0;
+        dateCreated = new Date();
     }
 
     public BankAccount(int accountNumber, String name, double balance) {
         this.accountNumber = accountNumber;
         this.name = name;
         this.balance = balance;
+        dateCreated = new Date();
     }
 
     public int getAccountNumber() {
@@ -52,6 +56,6 @@ public class BankAccount {
     }
 
     public String toString(){
-        return "Account number: " + accountNumber + "\nAccount Holder's name: " + name + "\nBalance: " + balance + "\nCreated on: " + dateCreated;
+        return String.format("Account number: " + accountNumber + "\nAccount Holder's name: " + name + "\nBalance: " + balance + "\nCreated on");
     }
 }

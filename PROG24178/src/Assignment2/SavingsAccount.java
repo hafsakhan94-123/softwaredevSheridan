@@ -1,8 +1,12 @@
 package Assignment2;
 
 public class SavingsAccount extends BankAccount{
-    private static double annualInterestRate;
+    private double annualInterestRate;
     private double monthlyInterestRate;
+
+    public SavingsAccount() {
+        System.out.println("No arg constructor invoked"); //always add no arg constructor even if its not used in programme to avoid crashes.
+    }
 
     public SavingsAccount(int accountNumber, String name, double balance) {
         super(accountNumber, name, balance);
@@ -15,11 +19,11 @@ public class SavingsAccount extends BankAccount{
     }
 
     public double getMonthlyInterest(){
-        return super.getBalance()*monthlyInterestRate;
+        return super.getBalance()*getMonthlyInterestRate();
     }
 
-    public static void setAnnualInterestRate(double annualInterestRate) {
-        SavingsAccount.annualInterestRate = annualInterestRate;
+    public void setAnnualInterestRate(double annualInterestRate) {
+        this.annualInterestRate = annualInterestRate;
     }
 
     @Override
