@@ -21,8 +21,7 @@ public class TestRectangle {
             Rectangle Rectangle3 = new Rectangle(-2, 20);
             System.out.println("Width & height of Rectangle3: " + Rectangle3.getWidth() + " " + Rectangle3.getHeight());
             System.out.println("Area and parameter of Rectangle3: " + Rectangle3.getArea() + " " + Rectangle3.getParameter());
-        }
-        catch (IllegalArgumentException ex){
+        } catch (IllegalArgumentException ex) {
             System.out.println(ex);
         }
         System.out.println("Number of Objects created: " + Rectangle.getNumberOfObjects());

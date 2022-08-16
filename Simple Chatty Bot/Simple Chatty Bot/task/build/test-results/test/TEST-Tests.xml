@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-13T17:04:22" hostname="LAPTOP-HQHQA6U1" time="0.088">
-  <properties/>
-  <testcase name="start" classname="Tests" time="0.088"/>
-  <system-out><![CDATA[?[1;31m
+<testsuite name="Tests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-13T17:04:22"
+           hostname="LAPTOP-HQHQA6U1" time="0.088">
+    <properties/>
+    <testcase name="start" classname="Tests" time="0.088"/>
+    <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Hello! My name is Aid.
 I was created in 2018.
@@ -38,5 +39,5 @@ Why do we use methods?
 Please try again.
 Congratulations, have a nice day!
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

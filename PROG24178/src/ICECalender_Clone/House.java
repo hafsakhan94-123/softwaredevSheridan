@@ -14,6 +14,7 @@ public class House implements Cloneable, Comparable<House> {
     public int getId() {
         return id;
     }
+
     public double getArea() {
         return area;
     }
@@ -21,12 +22,14 @@ public class House implements Cloneable, Comparable<House> {
     public java.util.Date getWhenBuilt() {
         return whenBuilt;
     }
-// The House class implements the clone method (lines 26–33) defined in the Object class.
+
+    // The House class implements the clone method (lines 26–33) defined in the Object class.
 // The header for the clone method defined in the Object class is:
-    @Override /** Override the protected clone method defined in
- the Object class, and strengthen its accessibility */
+    @Override
+    /** Override the protected clone method defined in
+     the Object class, and strengthen its accessibility */
     public Object clone() {
-        House houseclone = new House(id,area);
+        House houseclone = new House(id, area);
         houseclone.whenBuilt = new java.util.Date();
         houseclone.getWhenBuilt().setTime(whenBuilt.getTime());
         return houseclone;
@@ -36,7 +39,8 @@ public class House implements Cloneable, Comparable<House> {
 //    catch (CloneNotSupportedException ex) {
 //        return null;
 //    }
-}
+    }
+
     @Override // Implement the compareTo method defined in Comparable
     public int compareTo(House o) {
         if (area > o.area)

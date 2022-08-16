@@ -1,9 +1,10 @@
 import java.util.*;
+
 public class Ex_15A {
     public static void main(String[] args) {
-        int [] foo = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
-        int [] bar = {1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3};
-        int [] baz = new int[11];
+        int[] foo = {3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5};
+        int[] bar = {1, 4, 1, 4, 2, 1, 3, 5, 6, 2, 3};
+        int[] baz = new int[11];
 
         /*int sum = 0;
         for(int i = 0; i<foo.length ; i++){
@@ -23,9 +24,9 @@ public class Ex_15A {
             System.out.println(bar[i]);
 
         }*/
-        String [] foo1 = {"Incline", "Screw", "Pulley", "Lever", "Wedge", "Wheel"};
-        String [] bar1 = {"Incline", "Screw", "Pulley", "Lever", "Wedge", "Wheel"};
-        String [] baz1 = bar1;
+        String[] foo1 = {"Incline", "Screw", "Pulley", "Lever", "Wedge", "Wheel"};
+        String[] bar1 = {"Incline", "Screw", "Pulley", "Lever", "Wedge", "Wheel"};
+        String[] baz1 = bar1;
         String test = "test";
         /*for (int i=0;i<foo1.length;i++){
 
@@ -38,13 +39,12 @@ public class Ex_15A {
         }
     }
 
-    public static void rotate(int [] data, int amount) {
-
+    public static void rotate(int[] data, int amount) {
 
 
     }
 
-        }
+}
 
 
 

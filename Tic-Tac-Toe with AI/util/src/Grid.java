@@ -37,13 +37,13 @@ public class Grid {
         Grid grid = new Grid();
 
         List<String> fieldLines = Arrays.stream(stringField.split("\n"))
-            .map(String::strip)
-            .filter(line -> line.startsWith("|") && line.endsWith("|"))
-            .collect(Collectors.toList());
+                .map(String::strip)
+                .filter(line -> line.startsWith("|") && line.endsWith("|"))
+                .collect(Collectors.toList());
 
         if (fieldLines.size() < 3 * fieldNumber) {
             throw new WrongAnswer("Expected not less than " + fieldNumber + " grids in the output!\n" +
-                "Make sure you print the game grids in the correct format!");
+                    "Make sure you print the game grids in the correct format!");
         }
 
         fieldLines = fieldLines.subList(fieldNumber * 3 - 3, fieldNumber * 3);
@@ -66,9 +66,9 @@ public class Grid {
         List<Grid> gridList = new ArrayList<>();
 
         List<String> fieldLines = Arrays.stream(stringField.split("\n"))
-            .map(String::strip)
-            .filter(line -> line.startsWith("|") && line.endsWith("|"))
-            .collect(Collectors.toList());
+                .map(String::strip)
+                .filter(line -> line.startsWith("|") && line.endsWith("|"))
+                .collect(Collectors.toList());
 
         if (fieldLines.size() % 3 != 0) {
             throw new WrongAnswer("Wrong grid output format! Each grid should contain 3 lines that starts and ends with '|' symbol!");
@@ -120,19 +120,19 @@ public class Grid {
         }
 
         return grid[0][0] == grid[1][1] && grid[1][1] == grid[2][2] && grid[2][2] == player
-            || grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2] && grid[0][2] == player;
+                || grid[2][0] == grid[1][1] && grid[1][1] == grid[0][2] && grid[0][2] == player;
     }
 
     public boolean hasEmptyCells() {
         return Arrays.stream(grid)
-            .flatMap(Stream::of)
-            .anyMatch(cell -> cell == CellState.EMPTY);
+                .flatMap(Stream::of)
+                .anyMatch(cell -> cell == CellState.EMPTY);
     }
 
     public int getNumOfEmptyCells() {
         return (int) Arrays.stream(grid)
-            .flatMap(Stream::of)
-            .filter(cell -> cell == CellState.EMPTY).count();
+                .flatMap(Stream::of)
+                .filter(cell -> cell == CellState.EMPTY).count();
     }
 
     public GameState getGameState() {
@@ -157,11 +157,11 @@ public class Grid {
     public boolean isValidGrid() {
 
         int numOfX = (int) Arrays.stream(grid)
-            .flatMap(Stream::of)
-            .filter(cell -> cell == CellState.X).count();
+                .flatMap(Stream::of)
+                .filter(cell -> cell == CellState.X).count();
         int numOfO = (int) Arrays.stream(grid)
-            .flatMap(Stream::of)
-            .filter(cell -> cell == CellState.O).count();
+                .flatMap(Stream::of)
+                .filter(cell -> cell == CellState.O).count();
 
         return Math.abs(numOfO - numOfX) <= 1;
     }

@@ -2,9 +2,9 @@ package InnerClass;
 
 public class Button {
     private String title;
-    private  OnClickListener onClickListener;
+    private OnClickListener onClickListener;
 
-    public Button(String title){
+    public Button(String title) {
         this.title = title;
     }
 
@@ -15,10 +15,12 @@ public class Button {
     public void setOnClickListener(OnClickListener onClickListener) {
         this.onClickListener = onClickListener;
     }
-    public void onClick(){
+
+    public void onClick() {
         this.onClickListener.onClick(this.title);
     }
-    public interface OnClickListener{
+
+    public interface OnClickListener {
         public void onClick(String title);
     }
 }

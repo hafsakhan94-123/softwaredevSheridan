@@ -16,7 +16,7 @@ public class S4_BarkingDog {
         return true;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         shouldWakeUp(false, 10);
         shouldWakeUp(true, 9);
     }

@@ -23,20 +23,20 @@ public class Desk implements ITelephone {
 
     @Override
     public void answer() {
-        if (isRinging){
+        if (isRinging) {
             System.out.println("Answering the desk phone.");
-            isRinging=false;
+            isRinging = false;
         }
 
     }
 
     @Override
     public boolean callPhone(int phoneNumber) {
-        if (phoneNumber==myNumber){
-            isRinging=true;
+        if (phoneNumber == myNumber) {
+            isRinging = true;
             System.out.println("Ring ring");
-        }else {
-            isRinging=false;
+        } else {
+            isRinging = false;
         }
         return isRinging;
     }
@@ -64,9 +64,9 @@ public class Desk implements ITelephone {
 
         @Override
         public void dial(int phoneNumber) {
-            if (isOn){
+            if (isOn) {
                 System.out.println("Now ringing " + phoneNumber + " on mobile phone.");
-            }else{
+            } else {
                 System.out.println("Phone is switched off.");
             }
 
@@ -75,20 +75,20 @@ public class Desk implements ITelephone {
 
         @Override
         public void answer() {
-            if (isRinging){
+            if (isRinging) {
                 System.out.println("Answering the desk phone.");
-                isRinging=false;
+                isRinging = false;
             }
 
         }
 
         @Override
         public boolean callPhone(int phoneNumber) {
-            if (phoneNumber==myNumber && isOn){
-                isRinging=true;
+            if (phoneNumber == myNumber && isOn) {
+                isRinging = true;
                 System.out.println("Melody ring");
-            }else {
-                isRinging=false;
+            } else {
+                isRinging = false;
             }
             return isRinging;
         }

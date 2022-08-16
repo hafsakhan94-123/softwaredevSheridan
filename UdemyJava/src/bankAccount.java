@@ -1,15 +1,15 @@
 public class bankAccount {
-    private String  accNumber;
+    private String accNumber;
     private double balance;
     private String cusName;
     private String email;
     private int phoneNum;
 
-    public bankAccount(){
+    public bankAccount() {
         System.out.println("Empty constructor call");
     }
 
-    public bankAccount(String accNumber, double balance, String cusName, String email, int phoneNum){
+    public bankAccount(String accNumber, double balance, String cusName, String email, int phoneNum) {
         System.out.println("Acc constructor called");
         this.accNumber = accNumber;
         this.balance = balance;
@@ -19,13 +19,13 @@ public class bankAccount {
     }
 
     public bankAccount(String cusName, String email, int phoneNum) {
-        this("999",100,cusName,email,phoneNum);
+        this("999", 100, cusName, email, phoneNum);
         this.cusName = cusName;
         this.email = email;
         this.phoneNum = phoneNum;
     }
 
-    public String  getAccNumber() {
+    public String getAccNumber() {
         return accNumber;
     }
 
@@ -45,7 +45,7 @@ public class bankAccount {
         this.balance = balance;
     }
 
-    public void setAccNumber(String  accNumber) {
+    public void setAccNumber(String accNumber) {
         this.accNumber = accNumber;
     }
 
@@ -65,16 +65,16 @@ public class bankAccount {
         return balance;
     }
 
-    public void deposit(double depositAmount){
+    public void deposit(double depositAmount) {
         this.balance += depositAmount;
         System.out.println("Deposit amount: " + depositAmount + " Balance: " + this.balance);
     }
 
-    public void withdraw(double withdrawAmount){
-        if(this.balance > 0){
+    public void withdraw(double withdrawAmount) {
+        if (this.balance > 0) {
             this.balance -= withdrawAmount;
             System.out.println("Withdraw: " + withdrawAmount + " Remaining balance: " + this.balance);
-        }else
+        } else
             System.out.println("Insufficient balance");
     }
 }

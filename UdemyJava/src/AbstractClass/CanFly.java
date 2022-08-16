@@ -1,5 +1,5 @@
 package AbstractClass;
 
 public interface CanFly {
-     void fly();
+    void fly();
 }

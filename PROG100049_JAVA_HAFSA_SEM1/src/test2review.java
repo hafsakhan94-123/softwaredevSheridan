@@ -9,23 +9,22 @@ public class test2review {
     public static void main(String[] args) {
 
 
-        int [ ] myArray = {70, 60, 50};
+        int[] myArray = {70, 60, 50};
 
-        double avg =0;
+        double avg = 0;
         double sum = 0;
-        for (int i =0; i< myArray.length; i++){
+        for (int i = 0; i < myArray.length; i++) {
             sum += myArray[i];
-            avg = sum/ myArray.length;
+            avg = sum / myArray.length;
 
         }
         System.out.println(avg);
 
 
+    }
 
-        }
 
-
-        }
+}
 
 
 

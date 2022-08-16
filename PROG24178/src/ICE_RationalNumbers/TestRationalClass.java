@@ -1,7 +1,9 @@
 package ICE_RationalNumbers;
 
 public class TestRationalClass {
-    /** Main method */
+    /**
+     * Main method
+     */
     public static void main(String[] args) {
         // Create and initialize two rational numbers r1 and r2.
         Rational r1 = new Rational(4, 2);

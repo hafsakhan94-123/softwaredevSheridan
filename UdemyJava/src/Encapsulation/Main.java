@@ -15,12 +15,8 @@ public class Main {
 //        player.loseHealth(damage);
 //        System.out.println("Health remaining: " + player.healthRemaining());
 
-EnhancedPlayer player = new EnhancedPlayer("Tim",50,"sword");
+        EnhancedPlayer player = new EnhancedPlayer("Tim", 50, "sword");
         System.out.println("Enhanced player is " + player.getHealth());
-
-
-
-
 
 
     }

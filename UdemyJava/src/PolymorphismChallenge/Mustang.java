@@ -1,6 +1,6 @@
 package PolymorphismChallenge;
 
-public class Mustang extends Car{
+public class Mustang extends Car {
     public Mustang(int cylinders, String name) {
         super(8, "Mustang");
     }

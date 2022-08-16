@@ -10,7 +10,7 @@ public class SortRectangles {
                 new TestGeometricObject.ComparableRectangle(7.4, 35.4),
                 new TestGeometricObject.ComparableRectangle(1.4, 25.4)};
         java.util.Arrays.sort(rectangles);
-        for (Rectangle rectangle: rectangles) {
+        for (Rectangle rectangle : rectangles) {
             System.out.print(rectangle + " ");
             System.out.println();
         }

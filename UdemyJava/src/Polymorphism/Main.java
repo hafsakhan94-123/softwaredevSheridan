@@ -1,12 +1,14 @@
 package Polymorphism;
 
 
-class Movie{
+class Movie {
     private String name;
-    public Movie(String name){
+
+    public Movie(String name) {
         this.name = name;
     }
-    public String plot(){
+
+    public String plot() {
         return "No plot here";
     }
 
@@ -14,26 +16,30 @@ class Movie{
         return name;
     }
 }
-class Jaws extends Movie{
-    public Jaws(){
+
+class Jaws extends Movie {
+    public Jaws() {
         super("Jaws");
     }
-    public String plot(){
+
+    public String plot() {
         return "Shark eats people.";
     }
 }
-class IndependenceDay extends Movie{
-    public IndependenceDay(){
+
+class IndependenceDay extends Movie {
+    public IndependenceDay() {
         super("Independence Day");
-        }
+    }
 
     @Override
     public String plot() {
         return "Aliens attempt to take over";
     }
 }
-class MazeRunner extends Movie{
-    public MazeRunner(){
+
+class MazeRunner extends Movie {
+    public MazeRunner() {
         super("Maze Runner");
     }
 
@@ -42,8 +48,9 @@ class MazeRunner extends Movie{
         return "Kids try and escape a maze.";
     }
 }
-class StarWars extends Movie{
-    public StarWars(){
+
+class StarWars extends Movie {
+    public StarWars() {
         super("Star Wars");
     }
 
@@ -52,7 +59,8 @@ class StarWars extends Movie{
         return "Imperial forces try to take over universe";
     }
 }
-class Forgettable extends Movie{
+
+class Forgettable extends Movie {
     public Forgettable() {
         super("Forgetable");
     }
@@ -61,7 +69,7 @@ class Forgettable extends Movie{
 public class Main {
     public static void main(String[] args) {
 
-        for (int i = 1; i < 11; i++){
+        for (int i = 1; i < 11; i++) {
             Movie movie = randomMovie();
             System.out.println("Movie number " + i + " is " + movie.getName() + "\n" + "Plot: " + movie.plot() + "\n");
         }
@@ -72,7 +80,7 @@ public class Main {
     public static Movie randomMovie() {
         int randomNumber = (int) (Math.random() * 5) + 1;
         System.out.println("Random number generated is " + randomNumber);
-        switch (randomNumber){
+        switch (randomNumber) {
             case 1:
                 return new Jaws();
             case 2:

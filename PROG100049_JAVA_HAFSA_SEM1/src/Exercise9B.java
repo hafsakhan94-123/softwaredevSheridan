@@ -12,8 +12,8 @@ public class Exercise9B {
         System.out.println("Enter year");
         year = scan.nextInt();
 
-        boolean leapYear = (year%4 ==0 && year%100 !=0);
-        boolean notLeapYear = (year%4 == 0 && year%100 ==0 || year%400 ==0);
+        boolean leapYear = (year % 4 == 0 && year % 100 != 0);
+        boolean notLeapYear = (year % 4 == 0 && year % 100 == 0 || year % 400 == 0);
 
 
     }

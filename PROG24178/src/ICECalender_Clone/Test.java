@@ -1,4 +1,5 @@
 package ICECalender_Clone;
+
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -7,7 +8,7 @@ public class Test {
         Calendar calendar = new GregorianCalendar(2020, 2,
                 1);
         Calendar calendar1 = calendar;
-        Calendar calendar2 = (Calendar)calendar.clone();
+        Calendar calendar2 = (Calendar) calendar.clone();
         System.out.println("calendar == calendar1 is " + (calendar == calendar1));
         System.out.println("calendar == calendar2 is " + (calendar == calendar2));
         System.out.println("calendar.equals(calendar2) is " + calendar.equals(calendar2));
@@ -33,8 +34,8 @@ public class Test {
         System.out.println("list2 is " + list2[0] + ", " + list2[1]);
         System.out.println();
 
-        House house1 = new House(112,120);
-        House house3 = (House)house1.clone();
+        House house1 = new House(112, 120);
+        House house3 = (House) house1.clone();
         System.out.println(house1 == house3);
         System.out.println(house1.getWhenBuilt() == house3.getWhenBuilt());
         System.out.println(house1.equals(house3)); //same as ==. override equals in house class to compare values of house1 and house2

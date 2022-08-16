@@ -13,27 +13,36 @@ public class Circle extends GeometricObject implements Colorable {
         System.out.println(str);
     }
 
-    /** Return radius */
+    /**
+     * Return radius
+     */
     public double getRadius() {
         return radius;
     }
 
-    /** Set a new radius */
+    /**
+     * Set a new radius
+     */
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    @Override /** Return area */
+    @Override
+    /** Return area */
     public double getArea() {
         return radius * radius * Math.PI;
     }
 
-    /** Return diameter */
-    public double getDiameter() {
-        return 2 * radius;
-    }
+    /**
+     * Return diameter
+     */
+//    @Override
+//    public double getDiameter() {
+//        return 2 * radius;
+//    }
 
-    @Override /** Return perimeter */
+    @Override
+    /** Return perimeter */
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }
@@ -44,13 +53,13 @@ public class Circle extends GeometricObject implements Colorable {
                 " and the radius is " + radius);
     }
 
-    @Override
+
     public void howToColor() {
 
     }
 
     @Override
     public String toString() {
-        return String.format("%s%.2f%s%.2f","Area of Circle with radius: ",getRadius()," is ",getArea());
+        return String.format("%s%.2f%s%.2f", "Area of Circle with radius: ", getRadius(), " is ", getArea());
     }
 }

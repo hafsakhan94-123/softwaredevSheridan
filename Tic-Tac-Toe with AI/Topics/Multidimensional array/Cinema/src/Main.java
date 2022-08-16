@@ -4,13 +4,13 @@ class Main {
     public static void main(String[] args) {
         // put your code here
         Scanner input = new Scanner(System.in);
-        int r,c,row=0,ticket,count=1;
-            r=input.nextInt();
-            c=input.nextInt();
+        int r, c, row = 0, ticket, count = 1;
+        r = input.nextInt();
+        c = input.nextInt();
         int[][] arr = new int[r][c];
-        for (int i=0;i<arr.length;i++){
-            for (int j=0;j<arr[i].length;j++){
-                arr[i][j]=input.nextInt();
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = input.nextInt();
 
 
             }
@@ -18,20 +18,20 @@ class Main {
         ticket = input.nextInt();
 //        System.out.println(arr.length);
 //        System.out.println(arr[2].length);
-        for (int i=0;i<arr.length;i++){
-            for (int j=0;j<arr[i].length-1;j++){
-                if (arr[i][j]==0){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length - 1; j++) {
+                if (arr[i][j] == 0) {
                     int j_iterate = j;
-                    if (arr[i][j_iterate+1]==0){
-                        row=i;
+                    if (arr[i][j_iterate + 1] == 0) {
+                        row = i;
                         count++;
                         //break;
                     }
                 }
             }
         }
-        if (ticket==count)
-        System.out.println(row);
+        if (ticket == count)
+            System.out.println(row);
         else
             System.out.println("0");
     }

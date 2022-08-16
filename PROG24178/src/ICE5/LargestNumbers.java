@@ -1,21 +1,23 @@
 package ICE5;
- import java.util.ArrayList;
- import java.math.*;
 
- public class LargestNumbers {
+import java.util.ArrayList;
+import java.math.*;
+
+public class LargestNumbers {
     public static void main(String[] args) {
         ArrayList<Number> list = new ArrayList<>();
         list.add(45); // Add an integer
         list.add(3445.53); // Add a double
-            // Add a BigInteger
+        // Add a BigInteger
         list.add(new BigInteger("3432323234344343101"));
-             // Add a BigDecimal
+        // Add a BigDecimal
         list.add(new BigDecimal("2.0909090989091343433344343"));
 
         System.out.println("The largest number is " +
-                     getLargestNumber(list));
+                getLargestNumber(list));
     }
-// definition of getLargestNumber(ArrayList<Number> list)
+
+    // definition of getLargestNumber(ArrayList<Number> list)
     public static Number getLargestNumber(ArrayList<Number> list) {
         if (list == null || list.size() == 0)
             return null;
@@ -26,4 +28,4 @@ package ICE5;
                 number = list.get(i);
         return number;
     }
- }
+}

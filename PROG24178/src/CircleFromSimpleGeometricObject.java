@@ -16,27 +16,37 @@ public class CircleFromSimpleGeometricObject
         setFilled(filled);
     }
 
-    /** Return radius */
+    /**
+     * Return radius
+     */
     public double getRadius() {
         return radius;
     }
 
-    /** Set a new radius */
+    /**
+     * Set a new radius
+     */
     public void setRadius(double radius) {
         this.radius = radius;
     }
 
-    /** Return area */
+    /**
+     * Return area
+     */
     public double getArea() {
         return radius * radius * Math.PI;
     }
 
-    /** Return diameter */
+    /**
+     * Return diameter
+     */
     public double getDiameter() {
         return 2 * radius;
     }
 
-    /** Return perimeter */
+    /**
+     * Return perimeter
+     */
     public double getPerimeter() {
         return 2 * radius * Math.PI;
     }

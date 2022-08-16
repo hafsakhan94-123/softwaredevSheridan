@@ -3,17 +3,17 @@ public class Rectangle {
     private double height;
     private static int numberOfObjects = 0;
 
-    public Rectangle(){
+    public Rectangle() {
         width = 1;
         height = 1;
     }
 
-    public  Rectangle(double Height, double Width){
-        if (Height>0)
+    public Rectangle(double Height, double Width) {
+        if (Height > 0)
             this.height = Height;
         else
             height = 1;
-        if (Width>0)
+        if (Width > 0)
             this.width = Width;
         else
             Width = 1;
@@ -22,15 +22,15 @@ public class Rectangle {
     }
 
     public void setHeight(double newHeight) throws IllegalArgumentException {
-        if(newHeight > 0)
-        this.height = newHeight;
+        if (newHeight > 0)
+            this.height = newHeight;
         else
             throw new IllegalArgumentException("Height is assigned: " + newHeight + " Radius cannot be negative or zero");
     }
 
     public void setWidth(double newWidth) throws IllegalArgumentException {
         if (newWidth > 0)
-        this.width = newWidth;
+            this.width = newWidth;
         else
             throw new IllegalArgumentException("Width is assigned: " + newWidth + " Width cannot be negative or zero");
     }
@@ -44,15 +44,16 @@ public class Rectangle {
         return width;
     }
 
-    public double getArea(){
+    public double getArea() {
 
         return width * height;
     }
-    public  double getParameter(){
-        return 2*(width + height);
+
+    public double getParameter() {
+        return 2 * (width + height);
     }
 
-    public static int getNumberOfObjects(){
+    public static int getNumberOfObjects() {
         return numberOfObjects;
     }
 

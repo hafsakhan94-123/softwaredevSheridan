@@ -4,9 +4,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Cinema {
-    static int  row, col, book_row, book_seat, ticket;
-    static int total_income, count=0;
+    static int row, col, book_row, book_seat, ticket;
+    static int total_income, count = 0;
     static Scanner input = new Scanner(System.in);
+
     public static void Set_cinema() {
         System.out.println("Enter the number of rows:");
         row = input.nextInt() + 1;
@@ -28,76 +29,70 @@ public class Cinema {
 //        }
 //        System.out.println("Total income:\n$"+total_income);
 
-//    }
-           //cinema seat map
-public static String[][] seat;
-    public static void SeatingPlan(){
+    //    }
+    //cinema seat map
+    public static String[][] seat;
+
+    public static void SeatingPlan() {
         seat = new String[row][col];
         System.out.println("Cinema:");
-        for (int i=0;i<row;i++){
-            for (int j=0;j<col;j++){
-                if (i==0||j==0){
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if (i == 0 || j == 0) {
                     seat[i][j] = String.valueOf(count++);
-                }
-                else
-                seat[i][j] = "S";
+                } else
+                    seat[i][j] = "S";
 
             }
             seat[i][0] = String.valueOf(i);
             seat[0][0] = " ";
-            System.out.println(Arrays.toString(seat[i]).replace("[","")
-                    .replace(",","").replace("]",""));
+            System.out.println(Arrays.toString(seat[i]).replace("[", "")
+                    .replace(",", "").replace("]", ""));
         }
 
     }
 
-    public static void SeatingPlan_booking(){
+    public static void SeatingPlan_booking() {
         seat[book_row][book_seat] = "B";
         System.out.println("Cinema:");
-        for (int i=0;i<row;i++){
-            System.out.println(Arrays.toString(seat[i]).replace("[","")
-                    .replace(",","").replace("]",""));
+        for (int i = 0; i < row; i++) {
+            System.out.println(Arrays.toString(seat[i]).replace("[", "")
+                    .replace(",", "").replace("]", ""));
         }
 
 
-
-        }
-
+    }
 
 
-    public static void Tickets(){
+    public static void Tickets() {
         System.out.println("Enter a row number:");
         book_row = input.nextInt();
         System.out.println("Enter a seat number in that row:");
         book_seat = input.nextInt();
-        boolean check_front = book_row<=(row-1)/2;
-        boolean isEven = (row-1)%2==0;
-        if (isEven){
+        boolean check_front = book_row <= (row - 1) / 2;
+        boolean isEven = (row - 1) % 2 == 0;
+        if (isEven) {
             if (!check_front)
-                ticket=8;
+                ticket = 8;
             else
-                ticket=10;
+                ticket = 10;
 
-        } else{
-            if (book_row<=4)
-                ticket=10;
+        } else {
+            if (book_row <= 4)
+                ticket = 10;
             else
-                ticket=8;
+                ticket = 8;
         }
 
 
-
-
-
-
-        System.out.println("Ticket Price: $"+ticket);
+        System.out.println("Ticket Price: $" + ticket);
 
     }
 
     public static void main(String[] args) {
         // Write your code here
-          Set_cinema();
-       SeatingPlan();
+        Set_cinema();
+        SeatingPlan();
         Tickets();
         SeatingPlan_booking();
 

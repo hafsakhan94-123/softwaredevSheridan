@@ -1,6 +1,6 @@
 package Challenge_inheritance;
 
-public class Cylinder extends Circle{
+public class Cylinder extends Circle {
     private double height;
     private Circle circle1;
 
@@ -10,10 +10,10 @@ public class Cylinder extends Circle{
 
     public Cylinder(double radius, double height) {
         super(radius);
-        if (height < 0){
+        if (height < 0) {
             height = 0;
-        }else
-        this.height = height;
+        } else
+            this.height = height;
     }
 
     public double getHeight() {
@@ -21,6 +21,6 @@ public class Cylinder extends Circle{
     }
 
     public double getVolume() {
-        return super.getArea()*height;
+        return super.getArea() * height;
     }
 }

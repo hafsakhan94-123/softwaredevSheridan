@@ -10,12 +10,14 @@ public class Main {
 //        bird.breathe();
 //        bird.eat();
         Parrot parrot = new Parrot("Indian");
-        parrot.breathe();;
+        parrot.breathe();
+        ;
         parrot.eat();
         parrot.fly();
         Penguin penguin = new Penguin("Emperor");
         penguin.breathe();
         penguin.eat();
         penguin.fly();
+
     }
 }

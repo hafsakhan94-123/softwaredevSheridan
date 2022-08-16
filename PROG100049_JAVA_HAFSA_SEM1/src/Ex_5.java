@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class Ex_5 {
     public static void main(String[] args) {
 
-       // 1
+        // 1
 //
 //        String word1;
-          Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 //        word1 = scan.next();
 //        System.out.println("Enter word ");
 //        System.out.println(word1 + word1.toUpperCase() + word1);/
@@ -60,8 +60,8 @@ public class Ex_5 {
 
         String wordNew;
         wordNew = scan.nextLine();
-        String substr1 = wordNew.substring(0,wordNew.length()/2);
-        String substr2 = wordNew.substring(wordNew.length()/2,wordNew.length());
+        String substr1 = wordNew.substring(0, wordNew.length() / 2);
+        String substr2 = wordNew.substring(wordNew.length() / 2, wordNew.length());
 
         System.out.println(substr2 + substr1);
 
@@ -85,10 +85,7 @@ public class Ex_5 {
 //        System.out.println(sentence);
 
 
-
     }
-
-
 
 
 }

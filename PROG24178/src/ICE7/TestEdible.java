@@ -5,10 +5,10 @@ public class TestEdible {
         Object[] objects = {new Tiger(), new Chicken(), new Apple()};
         for (int i = 0; i < objects.length; i++) {
             if (objects[i] instanceof Edible)
-                System.out.println(((Edible)objects[i]).howToEat());
+                System.out.println(((Edible) objects[i]).howToEat());
 
             if (objects[i] instanceof Animal) {
-                System.out.println(((Animal)objects[i]).sound());
+                System.out.println(((Animal) objects[i]).sound());
             }
         }
     }
@@ -25,7 +25,9 @@ abstract class Animal {
         this.weight = weight;
     }
 
-    /** Return animal sound */
+    /**
+     * Return animal sound
+     */
     public abstract String sound();
 }
 

@@ -9,21 +9,18 @@ class Main {
         size = input.nextInt();
         int[] arr = new int[size];
 
-        for (int i=0;i<arr.length;i++)
-        {
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = input.nextInt();
         }
         int n = input.nextInt();
         int m = input.nextInt();
         boolean condition_next = true;
 
-        for (int i = 0; i< arr.length-1;i++)
-        {
-            int sum = n+m;
-            int sum_arr = arr[i] + arr[i+1];
-            if (sum_arr==sum)
-            {
-                if (arr[i]==n||arr[i+1]==n)
+        for (int i = 0; i < arr.length - 1; i++) {
+            int sum = n + m;
+            int sum_arr = arr[i] + arr[i + 1];
+            if (sum_arr == sum) {
+                if (arr[i] == n || arr[i + 1] == n)
                     condition_next = false;
             }
 

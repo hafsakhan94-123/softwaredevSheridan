@@ -11,10 +11,11 @@ public class Room {
         this.theBed = theBed;
     }
 
-    public void makingBed(){
+    public void makingBed() {
         System.out.println("Going to sleep --> making bed");
         theBed.make();
     }
+
     public Sofa getTheSofa() {
         return this.theSofa;
     }

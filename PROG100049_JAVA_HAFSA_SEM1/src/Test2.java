@@ -54,9 +54,9 @@ public class Test2 {
         System.out.println("Done");*/
 
         int xx = 54;
-        int yy =6;
-        int qq= 0;
-        while ((xx>=yy) && (qq<yy)){
+        int yy = 6;
+        int qq = 0;
+        while ((xx >= yy) && (qq < yy)) {
             xx -= yy;
             qq++;
             System.out.println();
@@ -67,20 +67,22 @@ public class Test2 {
         modifyFormat("10 Oct 13");
 
     }
-    public static void multiply(int number){
-        for(int m = 1; m<=number ; m++){
+
+    public static void multiply(int number) {
+        for (int m = 1; m <= number; m++) {
             System.out.println();
-            for (int n =1 ; n<= number ; n++){
-                int res = m*n;
+            for (int n = 1; n <= number; n++) {
+                int res = m * n;
                 System.out.print(m + "*" + n + "=" + res + ";");
 
             }
         }
     }
-    public static void modifyFormat(String date){
 
-        String s1 = date.substring(0,2);
-        String s2 = date.substring(3,6);
+    public static void modifyFormat(String date) {
+
+        String s1 = date.substring(0, 2);
+        String s2 = date.substring(3, 6);
         String s3 = date.substring(7);
 
         System.out.println(s2 + " " + s1 + ", " + "20" + s3);

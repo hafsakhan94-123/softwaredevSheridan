@@ -25,42 +25,42 @@ public class BasicHamburger {
         this.meat = meat;
     }
 
-    public void additionalItem1Price(String name, double price){
+    public void additionalItem1Price(String name, double price) {
         this.additionalItem1 = name;
         this.additionalItem1Price = price;
     }
 
-    public void additionalItem2Price(String name, double price){
+    public void additionalItem2Price(String name, double price) {
         this.additionalItem2 = name;
         this.additionalItem2Price = price;
     }
 
-    public void additionalItem3Price(String name, double price){
+    public void additionalItem3Price(String name, double price) {
         this.additionalItem3 = name;
         this.additionalItem3Price = price;
     }
 
-    public void additionalItem4Price(String name, double price){
+    public void additionalItem4Price(String name, double price) {
         this.additionalItem4 = name;
         this.additionalItem4Price = price;
     }
 
-    public double total(){
+    public double total() {
         double hamburgerPrice = this.basePrice;
-        System.out.println("Hamburger name: " + this.name + " on a " + this.rollType + " roll. " + " Price is: " +this.basePrice );
-        if (this.additionalItem1 != null){
+        System.out.println("Hamburger name: " + this.name + " on a " + this.rollType + " roll. " + " Price is: " + this.basePrice);
+        if (this.additionalItem1 != null) {
             hamburgerPrice += additionalItem1Price;
             System.out.println("Added " + this.additionalItem1 + " for an extra " + this.additionalItem1Price);
         }
-        if (this.additionalItem2 != null){
+        if (this.additionalItem2 != null) {
             hamburgerPrice += additionalItem2Price;
             System.out.println("Added " + this.additionalItem2 + " for an extra " + this.additionalItem2Price);
         }
-        if (this.additionalItem3 != null){
+        if (this.additionalItem3 != null) {
             hamburgerPrice += additionalItem3Price;
             System.out.println("Added " + this.additionalItem3 + " for an extra " + this.additionalItem3Price);
         }
-        if (this.additionalItem4 != null){
+        if (this.additionalItem4 != null) {
             hamburgerPrice += additionalItem4Price;
             System.out.println("Added " + this.additionalItem4 + " for an extra " + this.additionalItem4Price);
         }

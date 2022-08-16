@@ -8,9 +8,10 @@ public class Bed {
         return color;
     }
 
-    public void make(){
+    public void make() {
         System.out.println("Making the bed now!!!");
     }
+
     public String getHeight() {
         return height;
     }

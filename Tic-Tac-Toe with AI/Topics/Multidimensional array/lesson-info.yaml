@@ -1,10 +1,10 @@
 content:
-- Theory
-- Practical applications
-- The third row
-- Fill the matrix by numbers
-- Getting an element from a 3D array
-- The star figure
-- Printing lengths of nested arrays
-- Rotate a rectangle array
-- Cinema
+  - Theory
+  - Practical applications
+  - The third row
+  - Fill the matrix by numbers
+  - Getting an element from a 3D array
+  - The star figure
+  - Printing lengths of nested arrays
+  - Rotate a rectangle array
+  - Cinema

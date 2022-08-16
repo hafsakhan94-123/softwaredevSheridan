@@ -26,9 +26,9 @@ public class Main {
 //        System.out.println(person3.getEmail());
 
         //Animal
-        Animal animal = new Animal("Animal",1,1,5,5);
+        Animal animal = new Animal("Animal", 1, 1, 5, 5);
 
-        Dog dog = new Dog("Huskie",5,30,2,4,1,40,"long silky");
+        Dog dog = new Dog("Huskie", 5, 30, 2, 4, 1, 40, "long silky");
         dog.eat();
         dog.walk();
         //dog.run();

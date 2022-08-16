@@ -2,7 +2,7 @@ package ICE4;
 
 import java.util.Scanner;
 
-public class Test_ICE2 extends Triangle{
+public class Test_ICE2 extends Triangle {
     public static void main(String[] args) {
 
         Triangle triangle2 = new Triangle();
@@ -13,7 +13,7 @@ public class Test_ICE2 extends Triangle{
         double s1 = scan.nextDouble();
         double s2 = scan.nextDouble();
         double s3 = scan.nextDouble();
-        Triangle triangle1 = new Triangle(s1,s2,s3);
+        Triangle triangle1 = new Triangle(s1, s2, s3);
         System.out.println("Enter the color: ");
         scan.next();
         triangle1.setColor("Green");
@@ -23,7 +23,6 @@ public class Test_ICE2 extends Triangle{
         triangle1.setFilled(true);
         System.out.println();
         System.out.println(triangle1.toString());
-
 
 
     }

@@ -7,7 +7,7 @@ public class Motherboard {
     private int cardSlots;
     private String bios;
 
-    public void loadProgram(String programName){
+    public void loadProgram(String programName) {
         System.out.println("Program " + programName + " in now loading!");
     }
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-19T14:59:00" hostname="LAPTOP-HQHQA6U1" time="0.264">
-  <properties/>
-  <testcase name="start" classname="TicTacToeTest" time="0.264"/>
-  <system-out><![CDATA[?[1;31m
+<testsuite name="TicTacToeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-19T14:59:00"
+           hostname="LAPTOP-HQHQA6U1" time="0.264">
+    <properties/>
+    <testcase name="start" classname="TicTacToeTest" time="0.264"/>
+    <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Enter cells: > _XXOO_OX_
 ---------
@@ -326,5 +327,5 @@ Enter the coordinates: > 3 3
 ---------
 X wins
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

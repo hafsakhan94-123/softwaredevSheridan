@@ -1,6 +1,6 @@
 package Assignment3;
 
-public class Square extends GeometricObject implements Colorable{
+public class Square extends GeometricObject implements Colorable {
 
 
     //public double side;
@@ -13,6 +13,7 @@ public class Square extends GeometricObject implements Colorable{
     }
 
     public Square(double side) {
+
         this.side = side;
         str = toString();
         System.out.println(str);
@@ -36,7 +37,7 @@ public class Square extends GeometricObject implements Colorable{
 
     @Override
     public double getArea() {
-        return side*side;
+        return side * side;
     }
 
     @Override
@@ -46,6 +47,6 @@ public class Square extends GeometricObject implements Colorable{
 
     @Override
     public String toString() {
-        return String.format("%s%.2f%s%.2f","Area of Square with side: ",getSide()," is: ",getArea());
+        return String.format("%s%.2f%s%.2f", "Area of Square with side: ", getSide(), " is: ", getArea());
     }
 }

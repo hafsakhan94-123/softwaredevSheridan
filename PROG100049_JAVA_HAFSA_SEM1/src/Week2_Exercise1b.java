@@ -4,7 +4,7 @@ public class Week2_Exercise1b {
 
         int firstNumber = 56;
         int secondNumber = 43;
-        int result = firstNumber+secondNumber;
+        int result = firstNumber + secondNumber;
         System.out.println("Result = " + result);
 
         float myNum = 5.1f;
@@ -15,7 +15,7 @@ public class Week2_Exercise1b {
         char oneLetter = 'B';
         System.out.println("oneLetter = " + oneLetter);
         oneLetter = 65;
-        System.out.println("oneLetter = " +oneLetter);
+        System.out.println("oneLetter = " + oneLetter);
 
         final double GRANDIZER = 5.6;
         System.out.println("GRANDIZER = " + GRANDIZER);

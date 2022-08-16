@@ -54,10 +54,10 @@ public class SimpleBot {
                     "3. To determine the execution time of a program.\n" +
                     "4. To interrupt the execution of a program.");
             answer = scanner.nextInt();
-            if(answer!=2)
+            if (answer != 2)
                 System.out.println("Please try again.");
             //boolean condition = (answer == 2) ? true : false;
-        }while(answer!=2);
+        } while (answer != 2);
 
 
         // write your code here

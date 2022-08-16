@@ -1,6 +1,6 @@
 package Assignment2;
 
-public class SavingsAccount extends BankAccount{
+public class SavingsAccount extends BankAccount {
     private double annualInterestRate;
     private double monthlyInterestRate;
 
@@ -13,13 +13,13 @@ public class SavingsAccount extends BankAccount{
 
     }
 
-    public double getMonthlyInterestRate(){
-        monthlyInterestRate = (annualInterestRate/1200);
+    public double getMonthlyInterestRate() {
+        monthlyInterestRate = (annualInterestRate / 1200);
         return monthlyInterestRate;
     }
 
-    public double getMonthlyInterest(){
-        return super.getBalance()*getMonthlyInterestRate();
+    public double getMonthlyInterest() {
+        return super.getBalance() * getMonthlyInterestRate();
     }
 
     public void setAnnualInterestRate(double annualInterestRate) {

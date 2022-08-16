@@ -6,11 +6,11 @@ public class Animal {
     private int size;
     private int weight;
 
-    public void eat(){
+    public void eat() {
         System.out.println("Animal.eat() called");
     }
 
-    public void move(int speed){
+    public void move(int speed) {
         System.out.println("Animal.move() called" + "Animal is moving at " + speed);
     }
 

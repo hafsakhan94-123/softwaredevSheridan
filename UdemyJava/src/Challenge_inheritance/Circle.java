@@ -4,9 +4,9 @@ public class Circle {
     private double radius;
 
     public Circle(double radius) {
-        if(radius > 0) {
+        if (radius > 0) {
             this.radius = radius;
-        }else
+        } else
             radius = 0;
     }
 
@@ -14,7 +14,7 @@ public class Circle {
         return radius;
     }
 
-    public double getArea(){
-        return radius*radius*Math.PI;
+    public double getArea() {
+        return radius * radius * Math.PI;
     }
 }

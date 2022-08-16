@@ -12,13 +12,16 @@ public class Car {
         this.cylinders = cylinders;
         this.name = name;
     }
-    public void startEngine(){
+
+    public void startEngine() {
         System.out.println("About to leave. The engine is starting!");
     }
-    public void accelerate(){
+
+    public void accelerate() {
         System.out.println("Road is clear. Press accelerate.");
     }
-    public void brake(){
+
+    public void brake() {
         System.out.println("Road blocked. Apply brakes!");
     }
 

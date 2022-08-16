@@ -47,15 +47,15 @@ public class BankAccount {
         this.balance = balance;
     }
 
-    public void withdraw(double withdraw){
+    public void withdraw(double withdraw) {
         balance -= withdraw;
     }
 
-    public void deposit(double deposit){
+    public void deposit(double deposit) {
         balance += deposit;
     }
 
-    public String toString(){
+    public String toString() {
         return String.format("Account number: " + accountNumber + "\nAccount Holder's name: " + name + "\nBalance: " + balance + "\nCreated on");
     }
 }

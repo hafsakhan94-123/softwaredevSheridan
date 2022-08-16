@@ -11,7 +11,7 @@ public class Sofa {
         this.arms = arms;
     }
 
-    public void sit(){
+    public void sit() {
         System.out.println("Sitting on the sofa");
     }
 

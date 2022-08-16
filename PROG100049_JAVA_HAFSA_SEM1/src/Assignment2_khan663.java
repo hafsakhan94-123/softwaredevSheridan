@@ -2,10 +2,9 @@ import java.util.Scanner;
 
 public class Assignment2_khan663 {
     public static void main(String[] args) {
-        int operand, operand1, result=0;
+        int operand, operand1, result = 0;
         char operation;
         char input;
-
 
 
         Scanner scan = new Scanner(System.in);
@@ -117,37 +116,36 @@ public class Assignment2_khan663 {
                     System.out.println("Zero");
                     break;
                 case 1:
-                    System.out.println("One is " +result);
+                    System.out.println("One is " + result);
                     break;
                 case 2:
-                    System.out.println("TWO is "+result);
+                    System.out.println("TWO is " + result);
                     break;
                 case 3:
-                    System.out.println("Three is "+result);
+                    System.out.println("Three is " + result);
                     break;
                 case 4:
-                    System.out.println("Four is "+result);
+                    System.out.println("Four is " + result);
                     break;
                 case 5:
-                    System.out.println("Five is "+result);
+                    System.out.println("Five is " + result);
                     break;
                 case 6:
-                    System.out.println("Six is "+result);
+                    System.out.println("Six is " + result);
                     break;
                 case 7:
-                    System.out.println("Seven is "+result);
+                    System.out.println("Seven is " + result);
                     break;
                 case 8:
-                    System.out.println("Eight is "+result);
+                    System.out.println("Eight is " + result);
                     break;
                 case 9:
-                    System.out.println("Nine is "+result);
+                    System.out.println("Nine is " + result);
                     break;
                 default:
                     System.out.println("Other");
                     break;
             }
-
 
 
             System.out.println("To run again, press 'c' ");

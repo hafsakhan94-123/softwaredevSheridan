@@ -3,16 +3,17 @@ public class VipCustomer {
     private double creditLimit;
     private String email;
 
-    public VipCustomer(){
-        this("Default Name",100.0,"default@gmail.com");
+    public VipCustomer() {
+        this("Default Name", 100.0, "default@gmail.com");
     }
-    public VipCustomer(double creditLimit, String email){
-        this("Bob",creditLimit,email);
+
+    public VipCustomer(double creditLimit, String email) {
+        this("Bob", creditLimit, email);
         this.creditLimit = creditLimit;
         this.email = email;
     }
 
-    public VipCustomer(String name, double creditLimit, String email){
+    public VipCustomer(String name, double creditLimit, String email) {
         this.name = name;
         this.creditLimit = creditLimit;
         this.email = email;

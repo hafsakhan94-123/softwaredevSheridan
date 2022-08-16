@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-19T21:52:10" hostname="LAPTOP-HQHQA6U1" time="0.169">
-  <properties/>
-  <testcase name="start" classname="CinemaTests" time="0.169"/>
-  <system-out><![CDATA[?[1;31m
+<testsuite name="CinemaTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-01-19T21:52:10"
+           hostname="LAPTOP-HQHQA6U1" time="0.169">
+    <properties/>
+    <testcase name="start" classname="CinemaTests" time="0.169"/>
+    <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 Enter the number of rows:
 > 7
@@ -185,5 +186,5 @@ Cinema:
 8 S S S S S S S S S
 9 S S S S S S S S S
 ]]></system-out>
-  <system-err><![CDATA[]]></system-err>
+    <system-err><![CDATA[]]></system-err>
 </testsuite>

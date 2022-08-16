@@ -14,15 +14,15 @@ public class CinemaTests extends StageTest<String> {
 
         if (!output.toLowerCase().contains("enter the number of rows")) {
             return CheckResult.wrong("At the beginning your program should ask for entering the number of rows.\n" +
-                "Your output should contain 'Enter the number of rows:'.");
+                    "Your output should contain 'Enter the number of rows:'.");
         }
 
         output = program.execute("7");
 
         if (!output.toLowerCase().contains("enter the number of seats in each row")) {
             return CheckResult.wrong("After entering the number of rows your program should ask for entering" +
-                " the number of seats in each row.\n" +
-                "Your output should contain 'Enter the number of seats in each row'.");
+                    " the number of seats in each row.\n" +
+                    "Your output should contain 'Enter the number of seats in each row'.");
         }
 
         output = program.execute("8");
@@ -30,14 +30,14 @@ public class CinemaTests extends StageTest<String> {
 
         if (!output.toLowerCase().contains("enter a row number:")) {
             return CheckResult.wrong("After printing the the seating arrangement you should ask for entering a row number.\n" +
-                "Your output should contain 'Enter a row number:'.");
+                    "Your output should contain 'Enter a row number:'.");
         }
 
         output = program.execute("2");
 
         if (!output.toLowerCase().contains("enter a seat number in that row:")) {
             return CheckResult.wrong("After entering a row number you should ask for entering a seat number in that row.\n" +
-                "Your output should contain 'Enter a seat number in that row:'.");
+                    "Your output should contain 'Enter a seat number in that row:'.");
         }
 
         output = program.execute("4");
@@ -45,8 +45,8 @@ public class CinemaTests extends StageTest<String> {
 
         if (!output.toLowerCase().contains("ticket price")) {
             return CheckResult.wrong("After entering a row number and a seat number in that row you should print" +
-                " the ticket price.\n" +
-                "Your output should contain 'Ticket price:'.");
+                    " the ticket price.\n" +
+                    "Your output should contain 'Ticket price:'.");
         }
 
         if (!output.contains("$10")) {
@@ -139,8 +139,8 @@ public class CinemaTests extends StageTest<String> {
 
         if (!output.toLowerCase().contains("cinema:")) {
             throw new WrongAnswer("After entering a row number and a seat number in that row you should print" +
-                " the seating arrangement like in example!\n" +
-                "Your output should contain 'Cinema:'");
+                    " the seating arrangement like in example!\n" +
+                    "Your output should contain 'Cinema:'");
         }
 
         String arrangement = output.toLowerCase().split("cinema:")[1].trim();
@@ -155,7 +155,7 @@ public class CinemaTests extends StageTest<String> {
 
         if (!arrangement.startsWith(header.toString())) {
             throw new WrongAnswer("The first line of the seating arrangement should be " +
-                "'  " + header + "'");
+                    "'  " + header + "'");
         }
 
         String[] splittedOutput = arrangement.split("\n");
@@ -200,8 +200,8 @@ public class CinemaTests extends StageTest<String> {
 
         if (!output.toLowerCase().contains("cinema:")) {
             throw new WrongAnswer("After entering a row number and a seat number in that row you should print" +
-                " the seating arrangement like in example!\n" +
-                "Your output should contain 'Cinema:'");
+                    " the seating arrangement like in example!\n" +
+                    "Your output should contain 'Cinema:'");
         }
 
         String arrangement = output.toLowerCase().split("cinema:")[1].trim();
@@ -216,7 +216,7 @@ public class CinemaTests extends StageTest<String> {
 
         if (!arrangement.startsWith(header.toString())) {
             throw new WrongAnswer("The first line of the seating arrangement should be " +
-                "'  " + header + "'");
+                    "'  " + header + "'");
         }
 
         String[] splittedOutput = arrangement.split("\n");

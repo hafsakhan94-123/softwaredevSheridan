@@ -1,8 +1,8 @@
 package PolymorphismChallenge;
 
-public class Toyota extends Car{
+public class Toyota extends Car {
     public Toyota(int cylinders, String name) {
-        super(6,"Toyota");
+        super(6, "Toyota");
     }
 
     @Override

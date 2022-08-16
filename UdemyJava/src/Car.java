@@ -5,17 +5,17 @@ public class Car {
     private String engine;
     private String color;
 
-    public void setModel(String model){
-        String  validModel = model.toLowerCase();
+    public void setModel(String model) {
+        String validModel = model.toLowerCase();
         if ((validModel.equals("carrera")) || (validModel.equals("commodore"))) {
             this.model = model;
 
-        }else
+        } else
             this.model = "unknown";
 
     }
 
-    public String  getModel() {
+    public String getModel() {
         return this.model;
     }
 }

@@ -3,7 +3,7 @@ package InterfaceChallenge;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Player implements ISaveable{
+public class Player implements ISaveable {
     private String name;
     private int hitPoints;
     private int strength;
@@ -61,17 +61,17 @@ public class Player implements ISaveable{
     @Override
     public List<String> write() {
         List<String> values = new ArrayList<String>();
-        values.add(0,this.name);
-        values.add(1, "" + this.hitPoints );
+        values.add(0, this.name);
+        values.add(1, "" + this.hitPoints);
         values.add(2, "" + this.strength);
-        values.add(3, "" + this.weapon );
+        values.add(3, "" + this.weapon);
 
         return values;
     }
 
     @Override
     public void read(List<String> savedValue) {
-        if (savedValue != null && savedValue.size() > 0){
+        if (savedValue != null && savedValue.size() > 0) {
             this.name = savedValue.get(0);
             this.hitPoints = Integer.parseInt(savedValue.get(1));
             this.strength = Integer.parseInt(savedValue.get(2));

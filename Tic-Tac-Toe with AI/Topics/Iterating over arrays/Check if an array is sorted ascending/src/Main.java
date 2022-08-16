@@ -8,11 +8,11 @@ class Main {
         boolean sort = true;
         size = input.nextInt();
         int[] arr = new int[size];
-        for (int i=0;i< arr.length;i++){
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = input.nextInt();
         }
-        for (int i=0;i< arr.length-1;i++){
-            if (arr[i]>arr[i+1])
+        for (int i = 0; i < arr.length - 1; i++) {
+            if (arr[i] > arr[i + 1])
                 sort = false;
 
         }

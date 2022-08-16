@@ -1,11 +1,11 @@
 package OOPSChallenge;
 
-public class DeluxeHamburger extends BasicHamburger{
+public class DeluxeHamburger extends BasicHamburger {
 
     public DeluxeHamburger(String name, String rollType, String meat) {
         super(name, rollType, 2, meat);
-        super.additionalItem1Price("Chips",2);
-        super.additionalItem2Price("Drinks",4);
+        super.additionalItem1Price("Chips", 2);
+        super.additionalItem2Price("Drinks", 4);
     }
 
     @Override

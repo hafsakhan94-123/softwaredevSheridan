@@ -1,6 +1,6 @@
 package Assignment2;
 
-public class CheckingAccount extends BankAccount{
+public class CheckingAccount extends BankAccount {
     private int overDraftLimit;
 
     public CheckingAccount() {
